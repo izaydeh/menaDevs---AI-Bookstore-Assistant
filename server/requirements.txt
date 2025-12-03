@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+
+sqlalchemy
+pydantic
+python-dotenv
+
+langchain==0.1.20
+langchain-core==0.1.52
+langchain-community==0.0.30
+langchain-openai==0.0.8
+langchain-tools
+
+openai>=1.10.0
