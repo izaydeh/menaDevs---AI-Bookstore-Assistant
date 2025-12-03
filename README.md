@@ -56,6 +56,20 @@ Database assets:
 
 ---
 
+## ✔ 1.2 Create `.env` File (IMPORTANT)
+
+At the **root of the project**, create a file:
+
+`.env`
+
+And put inside:
+
+```
+OPENAI_API_KEY=your_openai_key_here
+```
+
+
+
 ## ✔ 1.3 Install Backend Dependencies
 
 From the project root:
@@ -154,6 +168,11 @@ Inside:
 
 Set your backend URL:
 
+### Android emulator:
+```dart
+const String baseUrl = "http://10.0.2.2:8000";
+```
+
 ### Windows / macOS / Chrome / Real device:
 ```dart
 const String baseUrl = "http://127.0.0.1:8000";
@@ -228,6 +247,13 @@ cd server
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
+```
+
+### 🔐 Add API Key
+Create `.env` in root:
+
+```
+OPENAI_API_KEY=your_key_here
 ```
 
 ### 🗄 Initialize DB
